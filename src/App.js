@@ -4,6 +4,7 @@ import {BrowserRouter as Router,Route,Link} from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Footer from './components/Footer';
 
 class App extends React.Component{
   constructor(props){
@@ -43,10 +44,11 @@ class App extends React.Component{
                 <Link className="nav-link" to="/contact">Contact</Link>
               </Nav>
             </Navbar.Collapse>
-          </Navbar>      
+          </Navbar> 
+
+          <Footer/>  
+      
       </Container>
-
-
      </Router>
     )
   }
